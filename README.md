@@ -1,9 +1,9 @@
 # pccoe_management
-# [Team ID]: [Team Name]
+# 11: Adiprush
 ## [Problem Statement Title]
 
 ### Description
-This project is an **Inventory and College Event Management System** designed to streamline the management of inventory and events in a college environment. It helps manage event registrations, inventory tracking, and facilitates communication among students and faculty.
+This project is an **pccoe Inventory and College Event Management System** designed to streamline the management of inventory and events in a college environment. It helps manage event registrations, inventory tracking, and facilitates communication among students and faculty.
 
 ### Features
 - User authentication (sign up, log in)
