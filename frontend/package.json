@@ -11,10 +11,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.3",
     "node": "^22.10.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.27.0"
+    "react-router-dom": "^6.27.0",
+    "react-tsparticles": "^2.12.2",
+    "three": "^0.169.0",
+    "uuid": "^10.0.0",
+    "vanta": "^0.5.24"
   },
   "devDependencies": {
     "@eslint/js": "^9.11.1",

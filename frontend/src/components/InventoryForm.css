@@ -1,0 +1,151 @@
+/* InventoryForm.css */
+
+body, html {
+  height: 100%; /* Ensure full height of the page */
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* Apply a global font */
+}
+
+.inventory-form {
+  z-index: 10;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.15); /* Slightly darker for better contrast */
+  border-radius: 10px;
+  color: white;
+  width: 40%;
+  max-width: 600px; /* Ensure it doesn't stretch too wide */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px); /* Adds blur effect to the background */
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the form */
+}
+
+.inventory-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px; /* Increased font size for better readability */
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* General styling for form groups */
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  transition: color 0.3s ease;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+/* Label hover effect */
+.form-group label:hover {
+  color: #007bff; /* Change color on hover */
+  cursor: pointer;
+}
+
+/* Input and textarea styling */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Slightly darker border for contrast */
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border: 2px solid #007bff; /* Blue border on focus */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Subtle shadow on focus */
+}
+
+/* Placeholder color */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Lighter placeholder for better contrast */
+}
+
+/* Submit button styling */
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Button hover effect */
+.submit-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Button active state */
+.submit-btn:active {
+  transform: translateY(0); /* Button returns to normal when clicked */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Less shadow on click */
+}
+
+/* Error message styling (if needed) */
+.error-message {
+  color: #ff4c4c;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .inventory-form {
+    width: 80%;
+    padding: 30px;
+  }
+
+  .inventory-form h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .inventory-form {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .inventory-form h2 {
+    font-size: 20px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+  }
+}

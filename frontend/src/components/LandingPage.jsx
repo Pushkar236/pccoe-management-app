@@ -1,31 +1,64 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./LandingPage.css"; // Custom styles for landing page
+import React, { useEffect, useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import './LandingPage.css'; // Custom styles for landing page
+import * as THREE from 'three'; // Ensure you import THREE
+import FOG from 'vanta/dist/vanta.fog.min'; // Import Vanta Fog
 
 const LandingPage = () => {
+  const [vantaEffect, setVantaEffect] = useState(null);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+
+    // Initialize Vanta.js on component mount
+    if (!vantaEffect) {
+      setVantaEffect(
+        FOG({
+          el: '#vanta-background', // Target the div element by its ID
+          THREE, // Pass the THREE.js library
+          highlightColor: 0x7a7a7a, // Highlight color of the fog
+          midtoneColor: 0x3c3c3c, // Midtone color of the fog
+          lowlightColor: 0x0a0a0a, // Lowlight color of the fog
+          baseColor: 0x1a1a1a, // Background color (base color of the fog)
+          speed: 1.5, // Speed of the fog animation
+        })
+      );
+    }
+
+    // Cleanup on component unmount
+    return () => {
+      if (vantaEffect) vantaEffect.destroy();
+    };
+  }, [vantaEffect]);
+
   return (
-    <div className="landing-page">
+    <div id="vanta-background" className="landing-page">
       <header className="hero-section">
         <h1>PCCOE Inventory & Event Management</h1>
-        <p>Streamlining event management, resource booking, and inventory control for all departments</p>
-        <div className="landing-buttons">
-          <Link to="/login"><button className="btn-primary">Login</button></Link>
-          <Link to="/register"><button className="btn-secondary">Register</button></Link>
-        </div>
+        <p>
+          Streamlining event management, resource booking, and inventory control
+          for all departments.
+        </p>
       </header>
 
       <section className="features">
-        <div className="feature-card">
-          <h2>Manage Events</h2>
-          <p>Request and manage events across all departments. Organize events with ease!</p>
+        <div className="feature-card" data-aos="fade-up">
+          <i className="fas fa-boxes feature-icon"></i>
+          <h2>Manage Inventory</h2>
+          <p>Track and manage all inventory such as event materials and stationeries.</p>
         </div>
-        <div className="feature-card">
-          <h2>Track Inventory</h2>
-          <p>Keep track of materials, stationeries, and other resources for smooth event operations.</p>
+        <div className="feature-card" data-aos="fade-up">
+          <i className="fas fa-calendar-alt feature-icon"></i>
+          <h2>Event Booking</h2>
+          <p>Book and manage venues for events across all departments with ease.</p>
         </div>
-        <div className="feature-card">
-          <h2>Admin Dashboard</h2>
-          <p>Manage and oversee all event and resource requests through the Admin Dashboard.</p>
+        <div className="feature-card" data-aos="fade-up">
+          <i className="fas fa-file-alt feature-icon"></i>
+          <h2>Permission Requests</h2>
+          <p>Automate the process of obtaining permissions for organizing events.</p>
         </div>
       </section>
     </div>

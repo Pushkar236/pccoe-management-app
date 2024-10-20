@@ -1,74 +1,109 @@
+/* Global styles for the background */
+#vanta-background {
+  position: absolute; /* Position Vanta background as absolute */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  min-height: 100vh; /* Full page height */
+  width: 100%; /* Full page width */
+  z-index: 1; /* Place it behind content */
+}
+
+/* Landing page content */
 .landing-page {
-    text-align: center;
-    padding: 50px 20px;
-  }
-  
-  .hero-section {
-    background: #333;
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
-  }
-  
-  .hero-section h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-  }
-  
-  .hero-section p {
-    font-size: 20px;
-    margin-bottom: 30px;
-  }
-  
-  .landing-buttons {
-    margin-bottom: 50px;
-  }
-  
-  .landing-buttons a {
-    margin: 10px;
-  }
-  
-  .btn-primary {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .btn-secondary {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
+  position: relative; /* Make sure content is positioned above background */
+  z-index: 2; /* Ensure content is visible above the background */
+  color: white; /* Text color for better contrast */
+  padding: 50px;
+  text-align: center; /* Center the content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure full page height */
+  background: rgba(0, 0, 0, 0.5); /* Optional overlay to make text more readable */
+}
+
+/* Hero Section */
+.hero-section h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
+
+.hero-section p {
+  font-size: 18px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.feature-card {
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
+  padding: 40px;
+  border-radius: 12px;
+  width: 300px;
+  height: 350px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.feature-card i {
+  font-size: 50px;
+  color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.feature-card h2 {
+  font-size: 28px;
+  color: #f0f0f0;
+  margin-bottom: 15px;
+}
+
+.feature-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
   .features {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
+    justify-content: center;
+    flex-direction: column;
   }
-  
+
   .feature-card {
-    background: #f8f9fa;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    width: 250px;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .feature-card {
+    width: 100%;
     padding: 20px;
-    width: 30%;
-    text-align: center;
+    height: auto;
   }
-  
+
   .feature-card h2 {
-    margin-bottom: 10px;
+    font-size: 24px;
   }
-  
+
   .feature-card p {
-    font-size: 16px;
-    color: #666;
+    font-size: 14px;
   }
-  
+}

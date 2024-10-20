@@ -1,0 +1,135 @@
+/* Register Form */
+.register {
+    z-index: 10;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: white;
+    width: 40%;
+    margin: 80px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); /* Adds blur effect to background */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Form Header */
+  .register h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px; /* Slightly bigger font for better impact */
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Label Styling */
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Adding subtle shadow */
+  }
+  
+  /* Label Hover Effect */
+  .form-group label:hover {
+    color: #007bff; /* Change color on hover */
+    transform: translateX(5px); /* Slight shift on hover */
+  }
+  
+  /* Focused Input Label */
+  .form-group input:focus + label,
+  .form-group select:focus + label {
+    color: #007bff; /* Change color when input is focused */
+    transform: translateX(5px); /* Shift label slightly */
+    text-shadow: 1px 1px 5px rgba(0, 123, 255, 0.3); /* Stronger shadow on focus */
+  }
+  
+  /* Inputs and Select */
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    border: 2px solid #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Input Placeholder */
+  .form-group input::placeholder,
+  .form-group select::placeholder {
+    color: rgba(255, 255, 255, 0.6); /* Slightly lighter placeholder */
+  }
+  
+  /* Button Styling */
+  .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  
+  /* Button Hover Effect */
+  .submit-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px); /* Button lift effect */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* More prominent shadow on hover */
+  }
+  
+  /* Button Active State */
+  .submit-btn:active {
+    transform: translateY(0); /* Button active state */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Less shadow on click */
+  }
+  
+  /* Button Disabled State */
+  .submit-btn:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+    box-shadow: none; /* No shadow when disabled */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .register {
+      width: 80%;
+      margin: 50px auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .register {
+      width: 95%;
+    }
+  
+    .register h2 {
+      font-size: 28px; /* Adjust for smaller screens */
+    }
+  }
+  
