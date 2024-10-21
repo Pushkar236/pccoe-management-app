@@ -101,8 +101,12 @@ const EventForm = () => {
           <ul>
             {events.map((event) => (
               <li key={event.id}>
-                <strong>{event.eventName}</strong> - {event.eventDate} @ {event.venue}
-                <p>{event.description}</p>
+                <p>
+                Name - <strong>{event.eventName}</strong>
+                  </p>
+                Event Date - {event.eventDate}
+                Venue - {event.venue} 
+                Description - <p>{event.description}</p>
               </li>
             ))}
           </ul>

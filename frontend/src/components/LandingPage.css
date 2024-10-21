@@ -1,17 +1,7 @@
-/* Global styles for the background */
-#vanta-background {
-  position: absolute; /* Position Vanta background as absolute */
-  top: 0; /* Align to the top */
-  left: 0; /* Align to the left */
-  min-height: 100vh; /* Full page height */
-  width: 100%; /* Full page width */
-  z-index: 1; /* Place it behind content */
-}
-
 /* Landing page content */
 .landing-page {
   position: relative; /* Make sure content is positioned above background */
-  z-index: 2; /* Ensure content is visible above the background */
+  z-index: 1; /* Ensure content is visible above the background */
   color: white; /* Text color for better contrast */
   padding: 50px;
   text-align: center; /* Center the content */
@@ -20,7 +10,6 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh; /* Ensure full page height */
-  background: rgba(0, 0, 0, 0.5); /* Optional overlay to make text more readable */
 }
 
 /* Hero Section */
@@ -35,17 +24,23 @@
   font-size: 18px;
   color: #ccc;
   line-height: 1.6;
+  margin-bottom: 40px; /* Add space between hero and features */
 }
 
 /* Features Section */
 .features {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 30px;
+  justify-content: center; /* Center the features section horizontally */
+  align-items: center; 
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+  gap: 30px; /* Add space between cards */
+  width: 100%;
+  max-width: 1200px; /* Limit the max width for proper alignment */
+  margin: 0 auto; /* Center the entire feature section */
+  padding: 20px 0; /* Optional: Add vertical padding to the feature section */
 }
 
+/* Individual Feature Card */
 .feature-card {
   background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
   padding: 40px;
@@ -80,10 +75,11 @@
   color: #e0e0e0;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
   .features {
-    justify-content: center;
-    flex-direction: column;
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    align-items: center;
   }
 
   .feature-card {
@@ -94,9 +90,8 @@
 
 @media (max-width: 480px) {
   .feature-card {
-    width: 100%;
+    width: 100%; /* Full width on very small screens */
     padding: 20px;
-    height: auto;
   }
 
   .feature-card h2 {

@@ -1,6 +1,6 @@
 .navbar {
-  background-color: #343a40;
-  padding: 10px 20px;
+  /* background-color: #343a40; */
+  padding: 10px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,18 +8,19 @@
   width: 100%;
   top: 0;
   z-index: 1000;
+  background-color: #00000096;
 }
 
 .navbar .logo h1 {
   color: white;
-  margin: 0;
+  margin: 0 0 0 16px;
   font-size: 24px;
 }
 
 .navbar ul {
   display: flex;
   list-style: none;
-  margin: 0;
+  margin: 0px 20px 0px 0px;
   padding: 0;
 }
 

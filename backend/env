@@ -1,0 +1,2 @@
+MONGO_URI="mongodb+srv://adityaatre26:CE1b1hZRaV7PFAjw@cluster0.1mx6n.mongodb.net/Hacktopia"
+JWT_SECRET="thisisasecret"

@@ -36,6 +36,7 @@ const LandingPage = () => {
 
   return (
     <div id="vanta-background" className="landing-page">
+      {/* Hero Section */}
       <header className="hero-section">
         <h1>PCCOE Inventory & Event Management</h1>
         <p>
@@ -44,22 +45,29 @@ const LandingPage = () => {
         </p>
       </header>
 
+      {/* Features Section */}
       <section className="features">
         <div className="feature-card" data-aos="fade-up">
           <i className="fas fa-boxes feature-icon"></i>
           <h2>Manage Inventory</h2>
-          <p>Track and manage all inventory such as event materials and stationeries.</p>
+          <p>
+            Track and manage all inventory such as event materials and
+            stationeries.
+          </p>
         </div>
         <div className="feature-card" data-aos="fade-up">
           <i className="fas fa-calendar-alt feature-icon"></i>
           <h2>Event Booking</h2>
-          <p>Book and manage venues for events across all departments with ease.</p>
+          <p>
+            Book and manage venues for events across all departments with ease.
+          </p>
         </div>
         <div className="feature-card" data-aos="fade-up">
           <i className="fas fa-file-alt feature-icon"></i>
           <h2>Permission Requests</h2>
           <p>Automate the process of obtaining permissions for organizing events.</p>
         </div>
+        {/* Add more event cards here if needed */}
       </section>
     </div>
   );
