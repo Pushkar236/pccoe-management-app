@@ -4,12 +4,13 @@
     padding: 40px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    color: white;
-    width: 40%;
+    color: rgb(255, 255, 255);
+    width: 30%;
     margin: 80px auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px); /* Adds blur effect to background */
     transition: all 0.3s ease-in-out;
+    overflow-x: hidden;
   }
   
   /* Form Header */
@@ -33,7 +34,7 @@
     margin-bottom: 8px;
     font-size: 18px;
     font-weight: 500;
-    color: #fff;
+    color: #ffffff;
     transition: color 0.3s ease, transform 0.3s ease;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Adding subtle shadow */
   }
@@ -53,21 +54,25 @@
   }
   
   /* Inputs and Select */
-  .form-group input,
+  .form-group input,    /* for all  inputs */
   .form-group select {
     width: 100%;
-    padding: 12px;
+    padding: 5px ;
     font-size: 16px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0.1);
-    color: white;
+    color: rgb(255, 255, 255);
     outline: none;
     transition: all 0.3s ease-in-out;
+    
   }
-  
+  .form-group select{
+    padding: 15px;
+  }
   .form-group input:focus,
   .form-group select:focus {
+    color: black;
     border: 2px solid #007bff;
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
   }
@@ -80,13 +85,14 @@
   
   /* Button Styling */
   .submit-btn {
+    font-family: "Poppins", sans-serif;
     display: block;
     width: 100%;
     padding: 14px;
-    background-color: #007bff;
+    background-color: #0e40dba8;
     border: none;
     color: white;
-    font-size: 16px;
+    font-size: 25px;
     font-weight: 600;
     cursor: pointer;
     border-radius: 4px;
@@ -98,8 +104,8 @@
   /* Button Hover Effect */
   .submit-btn:hover {
     background-color: #0056b3;
-    transform: translateY(-5px); /* Button lift effect */
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* More prominent shadow on hover */
+    /* transform: translateY(-5px); Button lift effect */
+    /* box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); More prominent shadow on hover */
   }
   
   /* Button Active State */

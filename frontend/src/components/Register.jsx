@@ -164,9 +164,12 @@ export default function Register() {
       <select
         id="designation"
         name="designation"
+        
         value={userData.designation}
         onChange={handleInputChange}
         required
+        
+        
       >
         <option value="Student">Student</option>
         <option value="Staff">Staff</option>

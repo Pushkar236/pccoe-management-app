@@ -1,90 +1,44 @@
 /* styles.css */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-  }
 
-  
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 16px;
-  }
-  
-  .navbar a:hover {
-    text-decoration: underline;
-  }
-  
-  .landing-page {
-    text-align: center;
-    padding: 50px;
-  }
-  
-  .landing-page h1 {
-    color: #ffffff;
-  }
-  
-  .landing-page .events-section {
-    margin-top: 30px;
-  }
-  
-  .landing-page ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .landing-page ul li {
-    background-color: white;
-    border-radius: 8px;
-    padding: 15px;
-    margin: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .landing-page button {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .landing-page button:hover {
-    background-color: #555;
-  }
-  
-  .login-form {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .login-form input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .login-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .login-form button:hover {
-    background-color: #555;
-  }
-  
+
+
+
+.landing-page {
+  text-align: center;
+  padding: 50px;
+}
+
+.landing-page h1 {
+  color: #ffffff;
+}
+
+.landing-page .events-section {
+  margin-top: 30px;
+}
+
+.landing-page ul {
+  list-style: none;
+  padding: 0;
+}
+
+.landing-page ul li {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.landing-page button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.landing-page button:hover {
+  background-color: #555;
+}
+

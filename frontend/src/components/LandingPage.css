@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 /* Landing page content */
 .landing-page {
+  
   position: relative; /* Make sure content is positioned above background */
   z-index: 1; /* Ensure content is visible above the background */
-  color: white; /* Text color for better contrast */
+  color: rgb(7, 7, 7); /* Text color for better contrast */
   padding: 50px;
   text-align: center; /* Center the content */
   display: flex;
@@ -14,10 +18,11 @@
 
 /* Hero Section */
 .hero-section h1 {
+  
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 450;
   margin-bottom: 20px;
-  color: #f0f0f0;
+  color: #000000;
 }
 
 .hero-section p {

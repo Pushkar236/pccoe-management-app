@@ -8,6 +8,7 @@ import EventForm from './components/EventForm';
 import InventoryForm from './components/InventoryForm';
 import EventList from './components/EventList';
 import Register from './components/Register';
+import Login from './components/login'; // Import Login component
 import './App.css'; // Global styles
 
 const App = () => {
@@ -19,11 +20,12 @@ const App = () => {
         FOG({
           el: '#vanta-background',
           THREE,
-          highlightColor: 0x7a7a7a,
-          midtoneColor: 0x3c3c3c,
-          lowlightColor: 0x0a0a0a,
-          baseColor: 0x1a1a1a,
-          speed: 1.5,
+          highlightColor: 0x6eafe3,
+          midtoneColor: 0x759be8,
+          lowlightColor: 0xaaaae5,
+          baseColor: 0xb9eced,
+          blurFactor: 0.57,
+          speed: 0.7
         })
       );
     }
@@ -40,8 +42,9 @@ const App = () => {
           <Route path="/" element={<LandingPage />} />
           <Route path="/add-event" element={<EventForm />} />
           <Route path="/manage-inventory" element={<InventoryForm />} />
-          <Route path="/events" element={<EventList />} />
-          <Route path='/Register' element={<Register/>}/>
+          <Route path="/events" element={<EventList />} /> {/* Event List Route */}
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} /> {/* Login Page Route */}
         </Routes>
       </Router>
     </div>

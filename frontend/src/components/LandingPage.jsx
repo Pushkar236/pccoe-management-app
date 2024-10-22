@@ -19,11 +19,12 @@ const LandingPage = () => {
         FOG({
           el: '#vanta-background', // Target the div element by its ID
           THREE, // Pass the THREE.js library
-          highlightColor: 0x7a7a7a, // Highlight color of the fog
-          midtoneColor: 0x3c3c3c, // Midtone color of the fog
-          lowlightColor: 0x0a0a0a, // Lowlight color of the fog
-          baseColor: 0x1a1a1a, // Background color (base color of the fog)
-          speed: 1.5, // Speed of the fog animation
+          highlightColor: 0x6eafe3,
+          midtoneColor: 0x759be8,
+          lowlightColor: 0xaaaae5,
+          baseColor: 0xb9eced,
+          blurFactor: 0.57,
+          speed:0.7
         })
       );
     }
